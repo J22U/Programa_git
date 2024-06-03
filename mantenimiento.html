@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mantenimiento de Equipos</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .header {
+            background-color: #0632ad;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .header img {
+            width: 100px;
+            height: auto;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        .option {
+            width: 50%; /* ancho del contenedor ajustado al 50% */
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position:relative;
+            overflow:hidden;
+        }
+
+        .option:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .option:before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(6, 50, 173, 0.5) 0%, rgba(6, 50, 173, 0) 80%);
+            transition: transform 0.5s ease;
+            z-index: 0;
+            border-radius: 50%;
+        }
+
+        .option:hover:before {
+            transform: scale(3);
+        }
+
+        .option-icon {
+            font-size: 48px;
+            margin-bottom: 10px;
+            color: #0632ad;
+            z-index: 1;
+            position: relative;
+        }
+
+        .option-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            z-index: 1;
+            position: relative;
+        }
+
+        .option-description {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #666;
+            z-index: 1;
+            position: relative;
+        }
+
+        .button {
+            background-color: #0632ad;
+            color: #fff;
+            padding: 10px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor:pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            z-index: 2;
+            position:relative;
+        }
+
+        .button:hover {
+            background-color: #0a59cf;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Mantenimiento de Equipos</h1>
+    </div>
+
+    <div class="container">
+
+        <div class="option">
+            <div class="option-icon">&#128202;</div>
+            <div class="option-title">Informes</div>
+            <div class="option-description">Genera informes detallados sobre el estado y rendimiento de los equipos.
+            </div>
+            <a href="#" class="button">Ir a Informes</a>
+        </div>
+        <div class="option">
+            <div class="option-icon">&#128100;</div>
+            <div class="option-title">Usuarios</div>
+            <div class="option-description">Administra los usuarios que tienen acceso al sistema de mantenimiento de
+                equipos.</div>
+            <a href="#" class="button">Ir a Usuarios</a>
+        </div>
+        <div class="option">
+            <div class="option-icon">&#128295;</div>
+            <div class="option-title">Crear Solicitud de Mantenimiento</div>
+            <div class="option-description">Crea una solicitud para el mantenimiento de un equipo específico.</div>
+            <a href="#" class="button">Crear Solicitud</a>
+        </div>
+        <div class="option">
+            <div class="option-icon">&#128196;</div>
+            <div class="option-title">Seguimiento de Actividades</div>
+            <div class="option-description">Realiza un seguimiento en tiempo real de las actividades de mantenimiento en
+                curso.</div>
+            <a href="#" class="button">Ir a Seguimiento</a>
+        </div>
+        <div class="option">
+            <div class="option-icon">&#128172;</div>
+            <div class="option-title">Comentarios</div>
+            <div class="option-description">Deja tus comentarios y sugerencias para mejorar el sistema de mantenimiento
+                de equipos.</div>
+            <a href="#" class="button">Ir a Comentarios</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
